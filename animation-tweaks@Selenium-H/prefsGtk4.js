@@ -1285,10 +1285,7 @@ const PrefsWindowForAction_AnimationTweaksExtension = new GObject.Class({
 
     this.prefsWindowOpening = new Gtk.ScrolledWindow({hexpand: true });
     this.prefsWindowOpening.set_min_content_height(700);
-    const cssProvider = new Gtk.CssProvider();
-    cssProvider.load_from_data('notebook > stack { background-color: rgba(0,0,0,0.0); }');  // Does not work for Gtk-4.
-    this.get_style_context().add_provider(cssProvider, Gtk.STYLE_PROVIDER_PRIORITY_APPLICATION);
-    
+  
     if(!toBeGrouped) {
       this.closingPrefs  = new PrefsWindowForClosing_AnimationTweaksExtension("close");
       this.closingPrefs.displayPrefs(toBeGrouped);
@@ -1967,10 +1964,6 @@ const PrefsWindowForProfiles_AnimationTweaksExtension = new GObject.Class({
     this.appProfilesPrefs             = new PrefsWindowForApps_AnimationTweaksExtension();
     this.extensionProfilesPrefs       = new PrefsWindowForExtensionProfiles_AnimationTweaksExtension();
     this.extensionProfilesPrefsWindow = new Gtk.ScrolledWindow({hexpand: true });
-
-    const cssProvider = new Gtk.CssProvider();
-    cssProvider.load_from_data('notebook > stack { background: rgba(0,0,0,0.0); }'); // Does not work in Gtk4
-    this.get_style_context().add_provider(cssProvider, Gtk.STYLE_PROVIDER_PRIORITY_APPLICATION);
 
     this.extensionProfilesPrefsWindow.set_child(this.extensionProfilesPrefs);
     this.append_page(this.appProfilesPrefs,             new Gtk.Label({ hexpand:true, label: _("Applications")}));
