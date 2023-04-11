@@ -6,9 +6,10 @@
 "shell-version": [
 	"3.38",
 	"40",
-	"41"
+	"43",
+	"43.4"
 ],
 "status" : "",
 "url": "https://github.com/Selenium-H/Animation-Tweaks", 
-"version": 16
+"version": 18
 }
