@@ -6,8 +6,7 @@ to install, just run the script INSTALL.sh after enabling the script execution p
 chmod +x INSTALL.sh
 ./INSTALL.sh
 ```
-
-if you are too lazy to customize the animations yourself, then you can try my config for the extension. to install the config, enter the following command by opening the terminal in the folder with the ``.dconf`` file:
+if you are interested in trying my config, then to install the config, enter the following command by opening the terminal in the folder with the ``.dconf`` file:
 
 ```bash
 dconf load /org/gnome/shell/extensions/animation-tweaks/ < animations-set.dconf
