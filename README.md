@@ -8,7 +8,7 @@ This is a fork of the [Animation Tweaks](https://github.com/Selenium-H/Animation
 
 ## Installation
 
-    wget https://raw.githubusercontent.com/nanashi-1/Animation-Tweaks-44/master/INSTALL.sh && ./INSTALL.sh
+    wget https://raw.githubusercontent.com/nanashi-1/Animation-Tweaks-44/master/INSTALL.sh && chmod +x INSTALL.sh && ./INSTALL.sh
 
 ## License
 
