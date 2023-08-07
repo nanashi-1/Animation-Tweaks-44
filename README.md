@@ -1,13 +1,17 @@
-the same extension, but a few changes have been made for partial compatibility with gnome since version 42. the effects of opening the top panel menu, dash menu, desktop menu and window menu do not work.
+<p align="center">
+    <img alt="logo" src="animation-tweaks@Selenium-H/eicon.png">
+</p>
 
-to install, just run the script INSTALL.sh after enabling the script execution permission:
+# Animation Tweaks 44
 
-```bash
-chmod +x INSTALL.sh
-./INSTALL.sh
-```
-if you are interested in trying my config, then to install the config, enter the following command by opening the terminal in the folder with the ``.dconf`` file:
+This is a fork of the [Animation Tweaks](https://github.com/Selenium-H/Animation-Tweaks) extension, primarily to make it compatible with GNOME 44.
 
-```bash
-dconf load /org/gnome/shell/extensions/animation-tweaks/ < animations-set.dconf
-```
+## Installation
+
+    wget https://raw.githubusercontent.com/nanashi-1/Animation-Tweaks-44/master/INSTALL.sh && ./INSTALL.sh
+
+## License
+
+This project is licensed under the terms of the GNU General Public License v3.0 (GPLv3).
+
+More information about the license: [LICENSE](LICENSE)
